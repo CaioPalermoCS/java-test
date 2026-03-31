@@ -18,5 +18,6 @@ jobs:
                      "channel_prefix": "code-analysis",
                      "agent": "Jonathan",
                      "githubUrl": "https://github.com/CaioPalermoCS/java-test",
-                     "pullRequestNumber": '${{ github.event.pull_request.number }}'
+                     "pullRequestNumber": '${{ github.event.pull_request.number }}',
+                     "branchName": "${{ github.event.pull_request.head.ref }}"
                    }'
