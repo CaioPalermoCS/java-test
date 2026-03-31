@@ -1,0 +1,22 @@
+name: PR HTTP Call
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  call_http:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Chamar API com corpo e header customizados
+        run: |
+          curl -X POST https://studio.omid.stormops.ai/api/v1/webhooks/qORzhJuufox196v6feAhg \
+               -H "Content-Type: application/json" \
+               -H "x-api-key: c4a5198b-567f-475f-89cb-12d85a80b1d0" \
+               -d '{
+                     "assignees": "caiocoghi@gmail.com",
+                     "channel_prefix": "code-analysis",
+                     "agent": "Jonathan",
+                     "githubUrl": "https://github.com/CaioPalermoCS/java-test",
+                     "pullRequestNumber": '${{ github.event.pull_request.number }}'
+                   }'
