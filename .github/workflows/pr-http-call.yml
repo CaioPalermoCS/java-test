@@ -14,7 +14,7 @@ jobs:
                -H "Content-Type: application/json" \
                -H "x-api-key: c4a5198b-567f-475f-89cb-12d85a80b1d0" \
                -d '{
-                     "assignees": "caiocoghi@gmail.com",
+                     "assignees": "caio.palermo@cloudstorm.com.br,diogo.kulaif@cloudstorm.com.br,arquitetura@cloudstorm.com.br",
                      "channel_prefix": "code-analysis",
                      "agent": "Jonathan",
                      "githubUrl": "https://github.com/CaioPalermoCS/java-test",
