@@ -39,4 +39,4 @@ USER root
 
 # Usa shell form (menos seguro) ❌
 CMD ./app
-# Teste
+# Teste 2
