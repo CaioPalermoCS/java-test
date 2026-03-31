@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Chamar API com corpo e header customizados
         run: |
-          curl -X POST https://studio.omid.stormops.ai/api/v1/webhooks/O0TKYnJKIt4nhYoZ510AB/test \
+          curl -X POST https://studio.omid.stormops.ai/api/v1/webhooks/O0TKYnJKIt4nhYoZ510AB \
                -H "Content-Type: application/json" \
                -H "x-api-key: c4a5198b-567f-475f-89cb-12d85a80b1d0" \
                -d '{
